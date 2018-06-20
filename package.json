@@ -1,0 +1,52 @@
+{
+  "name": "my-react-project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "connected-react-router": "^4.3.0",
+    "lodash.flow": "^3.5.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.2.0",
+    "rxjs": "^6.2.1",
+    "rxjs-compat": "^6.2.1",
+    "styled-components": "^3.2.6"
+  },
+  "devDependencies": {
+    "prettier": "^1.13.5",
+    "react-scripts": "1.1.4",
+    "react-styleguidist": "^7.0.14"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "test:coverage": "npm test -- --coverage",
+    "eject": "react-scripts eject",
+    "styleguide": "npx styleguidist server",
+    "styleguide:build": "npx styleguidist build",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}
