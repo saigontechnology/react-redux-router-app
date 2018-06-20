@@ -1,4 +1,6 @@
-# React Redux App
+# React Redux Router App
+
+A recommended React app structure with Redux and React Router
 
 ## Prerequisite:
 Your machine must already installed:
